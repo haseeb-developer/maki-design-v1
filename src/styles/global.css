@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --color1: #7a7a7a;
+  --color2: #171717;
+  --color3: #6528f7;
+  --color4: #e8e8e8;
+  --color5: #f9f9f9;
+  --color6: #eeeeee40;
+  --color7: #f6f6f6;
+  --color8: #939393;
+  --hovered-color: #bbbbbb;
+  --button-radius: 60px;
+  --gotham-family: 'Gotham';
+  --benzin-family: 'Benzin-Regular';
+  --benzin-medium: 'Benzin-Medium';
+  --benzin-bold: 'Benzin-Bold';
+  --poppins-family: 'Poppins', sans-serif;
+  --archivo-family: 'Archivo', sans-serif;
+}

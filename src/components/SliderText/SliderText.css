@@ -1,0 +1,65 @@
+@keyframes infiniteScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.slider__section {
+  background-color: var(--color2);
+}
+
+.slider__main-container {
+  max-width: 1440px;
+  text-transform: uppercase;
+  width: 100%;
+  margin: 0 auto;
+  color: #fff;
+  padding: 40px 8px;
+  overflow-x: hidden;
+  font-family: var(--benzin-family);
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.4;
+  display: flex;
+}
+
+.horizontal-scrolling-items {
+  --items-per-row: 4;
+  --items-gap: 40px;
+  --items-width: 600px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-size: 40px;
+  animation-name: infiniteScroll;
+  animation-duration: 20s;
+  animation-iteration-count: infinite; 
+  animation-timing-function: linear;
+  display: flex;
+  width: calc(var(--items-per-row) * var(--items-width) + (var(--items-per-row) - 1) * var(--items-gap));
+
+}
+
+.horizontal-scrolling-items__item {
+  width: var(--items-width);
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 850px) {
+  .slider-container {
+    padding: 42px 0;
+  }
+
+  .horizontal-scrolling-items {
+    --items-width: 300px;
+    font-size: 18px;
+    line-height: 1.4;
+  }
+}

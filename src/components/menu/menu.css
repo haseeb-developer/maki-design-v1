@@ -1,0 +1,18 @@
+.menu__icon {
+  cursor: pointer;
+  fill: var(--white-color);
+  transition: 0.3s ease-in-out;
+  max-width: 24px;
+  width: 100%;
+  display: none;
+}
+
+.menu__icon:hover {
+  fill: var(--color3);
+}
+
+@media (max-width: 850px) {
+  .menu__icon {
+    display: block;
+  }
+}

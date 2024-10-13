@@ -1,0 +1,18 @@
+.custom-button {
+  text-decoration: none;
+  padding: 12px 24px;
+  background-color: var(--color3);
+  border-radius: var(--button-radius);
+  color: var(--white-color);
+  font-family: var(--gotham-family);
+  border: 2px solid transparent;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 0.9;
+  transition: 0.2s ease-in-out;
+}
+
+.custom-button:hover {
+  background-color: transparent;
+  border: 2px solid var(--color3);
+}

@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Gotham';
+  src: url('../assets/fonts/gotham/Gotham-Medium.otf');
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Benzin-Regular';
+  src: url('../assets/fonts/benzin/Benzin-Regular.ttf') format('truetype');
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Benzin-Medium';
+  src: url('../assets/fonts/benzin/Benzin-Semibold.woff');
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Benzin-Bold';
+  src: url('../assets/fonts/benzin/Benzin-Bold.ttf') format('truetype');
+  font-weight: Bold;
+  font-style: normal;
+}

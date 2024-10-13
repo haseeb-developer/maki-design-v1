@@ -1,0 +1,132 @@
+/* General Form Styles */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 519px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-bottom: 80px;
+}
+
+.form__group {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.form__input {
+  width: 100%;
+  padding: 8px 0;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background-color: transparent;
+  color: var(--hovered-color);
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form__input:focus {
+  border-bottom-color: #ececec;
+}
+
+.form__input--error {
+  border-bottom-color: red;
+}
+
+.form__label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  font-size: 1rem;
+  padding-left: 10px;
+  padding-bottom: 16px;
+  color: var(--white-color);
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.form__input:focus ~ .form__label,
+.form__label--shrink {
+  top: -10px;
+  font-size: 0.8rem;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  padding: 0 10px;
+}
+
+.form__textarea {
+  resize: vertical;
+}
+
+.form__textarea ~ .form__label {
+  top: 0;
+}
+
+.form__button {
+  z-index: 999;
+  position: relative;
+  border: 2px solid transparent;
+  transition: background-color 0.3s ease;
+}
+
+.form__button:hover {
+  border: 2px solid var(--white-color);
+  color: var(--white-color);
+  background-color: transparent;
+}
+
+.form__button__svg {
+  transition: 0.1s ease-in-out;
+  stroke: var(--black-color);
+}
+
+.form__button:hover .form__button__svg {
+  transform: translateX(1px);
+  stroke: var(--white-color);
+}
+
+.form__submit__btn {
+  display: flex;
+  justify-content: center;
+}
+
+.form__submit__btn button {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
+  gap: 16px;
+  padding: 24px 40px;
+  cursor: pointer;
+  line-height: 1;
+  font-family: var(--archivo-family);
+  color: var(--black-color);
+}
+
+@media (max-width: 700px) {
+  .form__section__container {
+    padding-inline: 8px;
+  }
+
+  .container {
+    padding-inline: 8px;
+  }
+}
+
+@media (max-width: 800px) {
+  .form__submit__btn button {
+    padding: 25px 40px;
+    font-size: 16px;
+  }
+
+  .form {
+    padding-bottom: 86px;
+  }
+}

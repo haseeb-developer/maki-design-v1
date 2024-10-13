@@ -1,0 +1,138 @@
+.info__section {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 10px 0;
+  margin-top: 64px;
+}
+
+.info__section--block1 {
+  max-width: 508px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.info__section--block1 {
+  position: relative;
+  overflow: hidden;
+}
+
+.line {
+  background-color: var(--color3);
+  height: 1px;
+  transition: width 3s;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 
+.info__line {
+  border-bottom: 1px solid var(--color3);
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+} */
+
+.info__section--block2 {
+  max-width: 749px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  width: 100%;
+}
+
+.info__details {
+  border: 1px solid var(--color3);
+  border-radius: var(--button-radius);
+  color: var(--white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding-block: 8px;
+  max-width: 233px;
+  width: 100%;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  cursor: default;
+}
+
+.info__details:hover {
+  box-shadow: 0 0 8px var(--color3), 0 0 16px var(--color3);
+  transition: all 0.4s ease-in-out;
+}
+
+@keyframes neon-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 8px var(--color3), 0 0 16px var(--color3);
+  }
+  50% {
+    box-shadow: 0 0 10px var(--color3), 0 0 18px var(--color3);
+  }
+}
+
+.info__details:hover {
+  animation: neon-glow 1s ease-in-out infinite alternate;
+}
+
+.info__details h3,
+.info__details p {
+  color: #ffffff;
+  transition: color 0.4s ease-in-out;
+}
+
+.info__details:hover h3,
+.info__details:hover p {
+  color: var(--color3);
+}
+
+.info__details h3 {
+  font-family: var(--gotham-family);
+  color: var(--white-color);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.info__details p {
+  font-family: var(--gotham-family);
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+@media (max-width: 820px) {
+  .info__section--block1 {
+    display: none;
+  }
+}
+
+@media (max-width: 530px) {
+  .info__section {
+    margin-top: 44px;
+  }
+
+  .info__details {
+    max-width: 100%;
+    padding: 8px 24px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .info__details h3 {
+    font-size: 21px;
+  }
+
+  .info__details p {
+    font-size: 14px;
+  }
+}
+
+/* !+===== Line Spread Only ================= */
